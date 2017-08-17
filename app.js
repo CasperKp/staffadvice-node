@@ -27,6 +27,14 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
+
+// 404 error page
+app.use(function (req, res, next) {
+  res.status(404).render('errors/404');
+});
+
+
+// Listen on port 3000 - in development and production
 app.listen(process.env.PORT || 3000, function() {
   console.log("The application is running on localhost:3000");
 });
