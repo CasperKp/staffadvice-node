@@ -21,12 +21,16 @@ Routes
 
 // Home page
 app.get('/', function(req, res) {
-  res.render('pages/home');
+  res.render('pages/home', {
+    title: "| Compare job boards"
+  });
 });
 
 // About page
 app.get('/about', function(req, res) {
-  res.render('pages/about');
+  res.render('pages/about', {
+    title: "| About page"
+  });
 });
 
 
