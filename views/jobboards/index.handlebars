@@ -1,1 +1,5 @@
 <h1>Jobboards</h1>
+
+{{#each jobboards}}
+  <img src="{{this.image}}" alt=""> {{this.name}} <a href="/jobboards/{{slug}}">{{this.product}}<br></a>
+{{/each}}
