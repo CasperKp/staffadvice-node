@@ -39,7 +39,7 @@ app.set('view engine', 'handlebars');
 
 
 
-var positionTypes = [
+/*var positionTypes = [
   {
     name: 'Full Time',
     value: 'full-time'
@@ -49,7 +49,7 @@ var positionTypes = [
     value: 'part-time'
   }
 ];
-
+*/
 
 
 /* ----------
