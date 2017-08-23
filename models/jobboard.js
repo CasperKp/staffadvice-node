@@ -13,7 +13,20 @@ let jobboardSchema = mongoose.Schema({
   },
   image : {
     type: String
+  },
+  jobfunction : {
+    type: String
+  },
+  jobposition : {
+    type: String
+  },
+  country : {
+    type: String
+  },
+  repostingisfree : {
+    type: String
   }
 });
+
 
 let Jobboard = module.exports = mongoose.model('Jobboard', jobboardSchema);

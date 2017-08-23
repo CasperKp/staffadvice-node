@@ -1,3 +1,134 @@
 body {
   background-color: #EDF1F5;
 }
+
+
+
+/*----------
+
+The navbar
+
+----------*/
+
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.navbar-default {
+  background-color: white;
+  height: 65px;
+  border: 0;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
+}
+
+.navbar-default .navbar-brand {
+  height: 65px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #3BD3B2;
+  letter-spacing: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #3BD3B2;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 1px;
+  padding-top: 25px;
+  padding-bottom: 17px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  /*color: #00BAAD;*/
+  color: #00bf6f;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-right {
+  background-color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-toggle {
+  margin-top: 18px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 6px;
+  background-color: #7b8b8e;
+  width: 28px;
+}
+
+.navbar-toggle .icon-bar {
+  width: 28px;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-right {
+    margin-right: 0;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding: 0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    background-color: #F8F8F8;
+    padding-left: 25px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+
+
+/* ----------
+
+Jobboard index page
+
+---------- */
+
+.jobboard-index {
+  margin-top: 80px;
+}
+
+
+/* ----------
+
+Jobboard show page
+
+---------- */
+
+.show-page {
+  width: 1000px;
+  margin-top: 80px;
+}
+.jobboard-show {
+  background-color: white;
+
+}

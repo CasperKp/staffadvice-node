@@ -1,5 +1,62 @@
-<h1>Jobboards</h1>
+<div class="container jobboard-index">
+  <form class="" action="/jobboards" method="GET">
 
-{{#each jobboards}}
-  <img src="{{this.image}}" alt=""> {{this.name}} <a href="/jobboards/{{slug}}">{{this.product}}<br></a>
-{{/each}}
+     <select name="jobfunction">
+      <option value="all">Please select</option>
+      <option value="accounting">Accounting & Finance</option>
+      <option value="administration">Administration</option>
+    </select>
+
+    <select name="jobposition">
+      <option value="all">All</option>
+      <option value="full-time">Full-time</option>
+      <option value="part-time">Part-time</option>
+      <option value="freelance">Freelance</option>
+      <option value="project">Project</option>
+      <option value="internship">Internship</option>
+      <option value="graduate">Graduate & Trainee</option>
+      <option value="co-founder">Co-founder</option>
+    </select>
+
+    <select name="country">
+      <option value="all">All</option>
+      <option value="denmark">Denmark</option>
+      <option value="remote">Remote</option>
+    </select>
+
+    <div>
+     <input type="checkbox" id="true" name="repostingisfree" value="true">
+     <label for="true">Reposting is free</label>
+   </div>
+
+    <input type="submit" value="Search">
+
+  </form>
+</div>
+
+
+
+<!--
+<form>
+<select action="/jobboards" method="GET">
+  {{#each positionTypes}}
+    {{#ifCond jobposition this.value }}
+      <option value="{{this.value}}" selected>{{this.name}}</option>
+    {{else}}
+      <option value="{{this.value}}">{{this.name}}</option>
+    {{/ifCond}}
+  {{/each}}
+</select>
+
+  <input type="submit" value="Search">
+</form>
+-->
+
+<a href="/jobboards">Clear search</a>
+
+
+<div class="container">
+  {{#each jobboards}}
+    <img src="{{this.image}}" width="100px"> {{this.name}} <a href="/jobboards/{{slug}}">{{this.product}}<br></a>
+  {{/each}}
+</div>
